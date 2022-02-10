@@ -5,7 +5,7 @@
 //  Created by Cem Kazım Genel on 02/02/2022.
 //
 
-import UIKit
+import Foundation
 import Combine
 
 class AlbumListViewModel: ObservableObject {
@@ -13,18 +13,18 @@ class AlbumListViewModel: ObservableObject {
     private var cancellables = Set<AnyCancellable>()
     
     @Published private var albumList: Array<Item> = []
-    @Published private var albumImageList: Array<UIImage> = []
+    @Published private var albumImageUrls: Array<URL> = []
     
     init() {
         DataProvider.shared.getArtistsAlbums(id: "577aiGHd8W7Q8YPKIQEr4O")
     }
     
-    func fetchAlbumList() {
+    func getData() {
         DataProvider.shared.artistAlbumsSubject
             .sink(receiveValue: { [weak self] items in
                 guard let self = self else { return }
                 self.albumList = items
-                self.setAlbumImageList(with: items)
+                self.setAlbumImageUrls(with: items)
             }).store(in: &cancellables)
     }
     
@@ -32,18 +32,16 @@ class AlbumListViewModel: ObservableObject {
         return albumList
     }
     
-    private func setAlbumImageList(with albums: [Item]) {
+    private func setAlbumImageUrls(with albums: [Item]) {
         for album in albums {
-            if let firstImage = album.images?.first,
-               let imageURL = URL(string: firstImage.url ?? ""),
-               let imageData = try? Data(contentsOf: imageURL),
-               let image = UIImage(data: imageData) {
-                albumImageList.append(image)
+            if let firstImageUrl = album.images?.first?.url,
+               let imageUrl = URL(string: firstImageUrl) {
+                albumImageUrls.append(imageUrl)
             }
         }
     }
     
-    func getAlbumImageList() -> Array<UIImage> {
-        return albumImageList
+    func getAlbumImageUrls() -> Array<URL> {
+        return albumImageUrls
     }
 }

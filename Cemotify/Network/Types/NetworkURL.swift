@@ -30,19 +30,4 @@ extension NetworkURL {
         guard let url = components.url else { return nil }
         return url
     }
-    
-    static var tokenURL: URL? {
-        var components = URLComponents()
-        components.scheme = "https"
-        components.host = "accounts.spotify.com"
-        components.path = "/api/token"
-        guard let url = components.url else { return nil }
-        return url
-    }
-    
-    static var authKey: String {
-        let rawKey = "YOUR_CLIENT_ID:YOUR_CLIENT_SECRET_KEY"
-        let encodedKey = rawKey.data(using: .utf8)?.base64EncodedString() ?? ""
-        return "Basic " + encodedKey
-    }
 }

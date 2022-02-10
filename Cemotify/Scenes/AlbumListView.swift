@@ -14,13 +14,17 @@ struct AlbumListView: View {
     var body: some View {
         NavigationView {
             let albumList = viewModel.getAlbumList()
-            let albumImageList = viewModel.getAlbumImageList()
-            List(Array(zip(albumList, albumImageList)), id: \.0) { album, albumImage in
+            let albumImageUrls = viewModel.getAlbumImageUrls()
+            List(Array(zip(albumList, albumImageUrls)), id: \.0) { album, albumImageUrl in
                 HStack {
-                    Image(uiImage: albumImage)
-                        .resizable()
-                        .frame(width: 150, height: 150)
-                        .cornerRadius(150/2)
+                    if let imageData = try? Data(contentsOf: albumImageUrl),
+                       let image = UIImage(data: imageData) {
+                        Image(uiImage: image)
+                            .resizable()
+                            .cornerRadius(150/2)
+                            .frame(width: 150, height: 150)
+                            .clipped()
+                    }
                     VStack(alignment: .leading, spacing: 10) {
                         if let name = album.name,
                            let albumType = album.albumType,
@@ -35,7 +39,7 @@ struct AlbumListView: View {
                     }.padding(.leading, 8)
                 }.padding(.init(top: 12, leading: 0, bottom: 12, trailing: 0))
             }.onAppear {
-                viewModel.fetchAlbumList()
+                viewModel.getData()
             }.navigationBarTitle("Cem Kazim's Albums")
         }
     }

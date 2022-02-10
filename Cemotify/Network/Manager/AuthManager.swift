@@ -13,16 +13,27 @@ class AuthManager {
     static let shared = AuthManager()
     
     private let authKey: String = {
-        let rawKey = "YOUR_CLIENT_ID:YOUR_CLIENT_SECRET"
+        let clientID = "YOUR_CLIENT_ID"
+        let clientSecret = "YOUR_CLIENT_SECRET"
+        let rawKey = "\(clientID):\(clientSecret)"
         let encodedKey = rawKey.data(using: .utf8)?.base64EncodedString() ?? ""
         return "Basic \(encodedKey)"
+    }()
+    
+    private let tokenURL: URL? = {
+        var components = URLComponents()
+        components.scheme = "https"
+        components.host = "accounts.spotify.com"
+        components.path = "/api/token"
+        guard let url = components.url else { return nil }
+        return url
     }()
     
     private init() {}
     
     /// Request method for authentication token.
     func getAccessToken() -> AnyPublisher<String, Error> {
-        guard let url = NetworkURL.tokenURL else {
+        guard let url = tokenURL else {
             return Fail(error: NSError(domain: "Missing API URL", code: -10001, userInfo: nil)).eraseToAnyPublisher()
         }
         var urlRequest = URLRequest(url: url)
