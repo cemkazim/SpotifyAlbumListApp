@@ -1,0 +1,430 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		021776E927A9D6A6009D9E5C /* CemotifyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 021776E827A9D6A6009D9E5C /* CemotifyApp.swift */; };
+		021776EB27A9D6A6009D9E5C /* AlbumListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 021776EA27A9D6A6009D9E5C /* AlbumListView.swift */; };
+		021776ED27A9D6A7009D9E5C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 021776EC27A9D6A7009D9E5C /* Assets.xcassets */; };
+		021776F027A9D6A7009D9E5C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 021776EF27A9D6A7009D9E5C /* Preview Assets.xcassets */; };
+		021776FC27A9DA17009D9E5C /* ArtistsAlbums.swift in Sources */ = {isa = PBXBuildFile; fileRef = 021776FB27A9DA17009D9E5C /* ArtistsAlbums.swift */; };
+		0217770727A9DF81009D9E5C /* NetworkURL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0217770627A9DF81009D9E5C /* NetworkURL.swift */; };
+		0217770D27A9EBE1009D9E5C /* URLPaths.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0217770C27A9EBE1009D9E5C /* URLPaths.swift */; };
+		0217770F27AAB953009D9E5C /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0217770E27AAB953009D9E5C /* APIManager.swift */; };
+		0217771127AAB978009D9E5C /* HTTPMethods.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0217771027AAB978009D9E5C /* HTTPMethods.swift */; };
+		0217771727AABD89009D9E5C /* AlbumListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0217771627AABD89009D9E5C /* AlbumListViewModel.swift */; };
+		0217771B27AAC4E9009D9E5C /* DataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0217771A27AAC4E9009D9E5C /* DataProvider.swift */; };
+		0217771F27AB3986009D9E5C /* AccessToken.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0217771E27AB3986009D9E5C /* AccessToken.swift */; };
+		0217772127ABE001009D9E5C /* AuthManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0217772027ABE001009D9E5C /* AuthManager.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		021776E527A9D6A6009D9E5C /* Cemotify.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Cemotify.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		021776E827A9D6A6009D9E5C /* CemotifyApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CemotifyApp.swift; sourceTree = "<group>"; };
+		021776EA27A9D6A6009D9E5C /* AlbumListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumListView.swift; sourceTree = "<group>"; };
+		021776EC27A9D6A7009D9E5C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		021776EF27A9D6A7009D9E5C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		021776FB27A9DA17009D9E5C /* ArtistsAlbums.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtistsAlbums.swift; sourceTree = "<group>"; };
+		0217770627A9DF81009D9E5C /* NetworkURL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkURL.swift; sourceTree = "<group>"; };
+		0217770C27A9EBE1009D9E5C /* URLPaths.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLPaths.swift; sourceTree = "<group>"; };
+		0217770E27AAB953009D9E5C /* APIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
+		0217771027AAB978009D9E5C /* HTTPMethods.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPMethods.swift; sourceTree = "<group>"; };
+		0217771627AABD89009D9E5C /* AlbumListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumListViewModel.swift; sourceTree = "<group>"; };
+		0217771A27AAC4E9009D9E5C /* DataProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataProvider.swift; sourceTree = "<group>"; };
+		0217771E27AB3986009D9E5C /* AccessToken.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccessToken.swift; sourceTree = "<group>"; };
+		0217772027ABE001009D9E5C /* AuthManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthManager.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		021776E227A9D6A6009D9E5C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		021776DC27A9D6A6009D9E5C = {
+			isa = PBXGroup;
+			children = (
+				021776E727A9D6A6009D9E5C /* Cemotify */,
+				021776E627A9D6A6009D9E5C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		021776E627A9D6A6009D9E5C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				021776E527A9D6A6009D9E5C /* Cemotify.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		021776E727A9D6A6009D9E5C /* Cemotify */ = {
+			isa = PBXGroup;
+			children = (
+				0217771527AABC53009D9E5C /* Scenes */,
+				021776F627A9D8A2009D9E5C /* Network */,
+				021776E827A9D6A6009D9E5C /* CemotifyApp.swift */,
+				021776EC27A9D6A7009D9E5C /* Assets.xcassets */,
+				021776EE27A9D6A7009D9E5C /* Preview Content */,
+			);
+			path = Cemotify;
+			sourceTree = "<group>";
+		};
+		021776EE27A9D6A7009D9E5C /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				021776EF27A9D6A7009D9E5C /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		021776F627A9D8A2009D9E5C /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				0276BEF427B2E1BA00BB9628 /* Manager */,
+				0217772827AC7D11009D9E5C /* Service */,
+				0217772927AC87E5009D9E5C /* Types */,
+				021776FA27A9D997009D9E5C /* Model */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		021776FA27A9D997009D9E5C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				021776FB27A9DA17009D9E5C /* ArtistsAlbums.swift */,
+				0217771E27AB3986009D9E5C /* AccessToken.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		0217771527AABC53009D9E5C /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				021776EA27A9D6A6009D9E5C /* AlbumListView.swift */,
+				0217771627AABD89009D9E5C /* AlbumListViewModel.swift */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		0217772827AC7D11009D9E5C /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				0217771A27AAC4E9009D9E5C /* DataProvider.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		0217772927AC87E5009D9E5C /* Types */ = {
+			isa = PBXGroup;
+			children = (
+				0217770C27A9EBE1009D9E5C /* URLPaths.swift */,
+				0217771027AAB978009D9E5C /* HTTPMethods.swift */,
+				0217770627A9DF81009D9E5C /* NetworkURL.swift */,
+			);
+			path = Types;
+			sourceTree = "<group>";
+		};
+		0276BEF427B2E1BA00BB9628 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				0217772027ABE001009D9E5C /* AuthManager.swift */,
+				0217770E27AAB953009D9E5C /* APIManager.swift */,
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		021776E427A9D6A6009D9E5C /* Cemotify */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 021776F327A9D6A7009D9E5C /* Build configuration list for PBXNativeTarget "Cemotify" */;
+			buildPhases = (
+				021776E127A9D6A6009D9E5C /* Sources */,
+				021776E227A9D6A6009D9E5C /* Frameworks */,
+				021776E327A9D6A6009D9E5C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Cemotify;
+			productName = Cemotify;
+			productReference = 021776E527A9D6A6009D9E5C /* Cemotify.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		021776DD27A9D6A6009D9E5C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1300;
+				LastUpgradeCheck = 1300;
+				TargetAttributes = {
+					021776E427A9D6A6009D9E5C = {
+						CreatedOnToolsVersion = 13.0;
+					};
+				};
+			};
+			buildConfigurationList = 021776E027A9D6A6009D9E5C /* Build configuration list for PBXProject "Cemotify" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 021776DC27A9D6A6009D9E5C;
+			productRefGroup = 021776E627A9D6A6009D9E5C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				021776E427A9D6A6009D9E5C /* Cemotify */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		021776E327A9D6A6009D9E5C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				021776F027A9D6A7009D9E5C /* Preview Assets.xcassets in Resources */,
+				021776ED27A9D6A7009D9E5C /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		021776E127A9D6A6009D9E5C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0217770F27AAB953009D9E5C /* APIManager.swift in Sources */,
+				0217772127ABE001009D9E5C /* AuthManager.swift in Sources */,
+				0217770D27A9EBE1009D9E5C /* URLPaths.swift in Sources */,
+				0217771727AABD89009D9E5C /* AlbumListViewModel.swift in Sources */,
+				0217771B27AAC4E9009D9E5C /* DataProvider.swift in Sources */,
+				021776EB27A9D6A6009D9E5C /* AlbumListView.swift in Sources */,
+				021776FC27A9DA17009D9E5C /* ArtistsAlbums.swift in Sources */,
+				0217771127AAB978009D9E5C /* HTTPMethods.swift in Sources */,
+				021776E927A9D6A6009D9E5C /* CemotifyApp.swift in Sources */,
+				0217770727A9DF81009D9E5C /* NetworkURL.swift in Sources */,
+				0217771F27AB3986009D9E5C /* AccessToken.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		021776F127A9D6A7009D9E5C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		021776F227A9D6A7009D9E5C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		021776F427A9D6A7009D9E5C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Cemotify/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = cemkazim.Cemotify;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		021776F527A9D6A7009D9E5C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Cemotify/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = cemkazim.Cemotify;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		021776E027A9D6A6009D9E5C /* Build configuration list for PBXProject "Cemotify" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				021776F127A9D6A7009D9E5C /* Debug */,
+				021776F227A9D6A7009D9E5C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		021776F327A9D6A7009D9E5C /* Build configuration list for PBXNativeTarget "Cemotify" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				021776F427A9D6A7009D9E5C /* Debug */,
+				021776F527A9D6A7009D9E5C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 021776DD27A9D6A6009D9E5C /* Project object */;
+}
